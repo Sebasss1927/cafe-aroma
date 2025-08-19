@@ -1,114 +1,82 @@
+/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #fff8f0;
-  color: #333;
 }
 
 header {
-  background: #6f4e37;
-  padding: 15px 20px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  color: #fff;
-  font-size: 1.5em;
+  background-color: #6b4f4f;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 nav ul {
   list-style: none;
-  display: flex;
-  gap: 15px;
-  margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-nav ul li a {
-  color: #fff;
+nav a {
+  color: white;
   text-decoration: none;
-  padding: 5px 10px;
-  border-radius: 5px;
+  font-weight: bold;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-  background: #d2691e;
-}
-
-.banner {
-  background: url("https://source.unsplash.com/1600x500/?coffee,beans") no-repeat center/cover;
-  text-align: center;
-  color: #fff;
-  padding: 100px 20px;
-}
-
-.banner h2 {
-  font-size: 2.5em;
-}
-
-.productos, .nosotros, .contacto {
+section {
   padding: 40px 20px;
   text-align: center;
 }
 
-.grid {
+/* Sección Inicio */
+.inicio {
   display: flex;
-  gap: 20px;
+  align-items: center;
   justify-content: center;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
-.card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  padding: 15px;
-  width: 300px;
-}
-
-.card img {
-  max-width: 100%;
+.inicio img {
+  width: 100%;
+  max-width: 400px;  /* Limita tamaño máximo */
+  height: auto;
   border-radius: 10px;
 }
 
-form {
-  margin: 20px auto;
-  max-width: 400px;
+.texto-inicio {
+  max-width: 500px;
+  text-align: left;
+}
+
+/* Sección Nosotros */
+.nosotros {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-form input, form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.nosotros img {
+  width: 250px;
+  border-radius: 10px;
 }
 
-form button {
-  background: #6f4e37;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.texto-nosotros {
+  max-width: 500px;
+  text-align: left;
 }
 
-form button:hover {
-  background: #d2691e;
-}
-
+/* Footer */
 footer {
-  background: #6f4e37;
-  color: #fff;
+  background-color: #6b4f4f;
+  color: white;
+  padding: 20px;
   text-align: center;
-  padding: 15px;
-  margin-top: 20px;
 }
+
+
