@@ -3,63 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Café Aroma</title>
-  <link rel="stylesheet" href="style.css">
+  <title> Cafe Aroma</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <!-- Header -->
+  <!-- NAV -->
   <header>
-    <h1>Café Aroma</h1>
     <nav>
       <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#menu">Menú</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
+    <h1>☕ Café aroma</h1>
+    <p>El mejor café, al mejor sabor.</p>
   </header>
 
-  <!-- Sección Inicio -->
-  <section id="inicio">
-    <div class="inicio">
-      <div class="texto-inicio">
-        <h2>Bienvenidos a Café Aroma</h2>
-        <p>Disfruta del mejor café de la ciudad.</p>
+  <!-- BANNER -->
+  <section class="banner">
+    <h2>Disfruta un buen café con nosotros</h2>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section class="productos">
+    <h2>Nuestros productos</h2>
+    <div class="grid">
+      <div class="card">
+        <img src=data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUTEhIVFRUWFRUVEBUVFRUVFRUQFREWFhUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODUtNyktLisBCgoKDg0OGxAQGi0lHx0tLS0rLS0tLS0tLS0tLS0tLSstLS0tLS0tLS0rLS8tLS4tKy0tLS0tLS0tLS0tLS0tLf/AABEIALsBDgMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAADAQIEBQYHAAj/xABCEAACAQIEAwUFBQUGBgMAAAABAgADEQQSITEFQVEGEyJhkTJxgaHRBxRCUpIjM1OxwRUXQ3KC8CRiY8Lh8Rai0v/EABkBAAMBAQEAAAAAAAAAAAAAAAABAwIEBf/EACcRAAICAgIBBAICAwAAAAAAAAABAhEDIRIxQRMiMlEEFFKhQrHB/9oADAMBAAIRAxEAPwDm7xrv4YtQxlOnm0nmwR68mV6va8C2plyvCLx44JOnmkc3ptlIoIhQ0tv7FjG4RaL1EzXptEvhTeGT3e4kHDUsgiitOLInytHZjftBYltDKwSe12ME2BJnTiaitnLmTk9FfVYmBanLL7hBvhpRTRjgyCkueFbSC2CMsOHrYaxZGpR0PEuMhz7yvx76SyYSo4jIYlci+V1EJhNotWJhDpPVzK/5E79oBo52IEUUrx7U5W0QpkEpeIUks0p7u5rmCgR0MskbwyL3Yhs+kxLZuDcexKh0lfWMlVasjhbwgq7DJK9IEsQyWqieyib5EuDIdp4CSyBG6R8g4hMFvFxmpg0qARxa8w1uykXqhgEjVBrJZkWpvNRFPovnjaTkbRYwTlidMiR98aeTiDQBMaqwTAskxZg6mJMj5p7NJmwvfG0Ct7xS88tSa2J0E2nu/MG1aAfFCCi2DkkEqYkyJUxJvPPiAYC9zLxjXaOecr6ZPw9UneEfEWjKZsJGYknSYW2UlqJZU30kHFJm2hCDlkU1mXeEIq7QpydUw1GiQIjJEp4skbQFSo0qlslKWg4Bju7MhjFNCiuxjaMxdjnqWgXqxKqkwRSNJA+QXvJ4kxg0jrGAxsaYpMbeaQtDol54RYANiGOjTABIeiJ7DUsxkirTy6TMpeBxj5BSK+8lPIjRwFMuc08x0jTPHacyR1MjiobwoJkUnWSqNYc50cUcfJi3M9nMeaywTPeJxSRuEm3QbC67yYtORMFJqmcmV7OzGtEauukrslzLLESuU6y2HohmWz33aKMMRJS1BPPWFpbZHQMw2BS8il7yZw86SGTSOmFNoO0hY1NJNUawGPXSSg6kUmriRcMukdXSOw3sw+Bwz1qq06SPUdvZRFLMfgOXnOhfI55aiVFWnYw9OkZ0rAfY7jMRZqz08MvQ/tanxVSFH6pqML9i+HUeLF4hv8opKPQq0s4to5lNJnDzSMYaM7xX+xzDEeHE1weWYU2HoFUzI9ovsnxlEZqDJiQNwv7Kp8EYkH9V/KZ4yRrnF+TmT04VV0hMTQZGKOrI6mzqwKsp6Mp1BgjEmUlGhjpI7LJROkA8cWE0gQi2jqSxxNpuyVNDMsaY8tBsYxFhw4R2L3nuHDSJijrOd/M6UqgRnkYyUyyM0tEjMtmMTlGsYo2nMdLIjbxhjzvGzpXRyPscBD0xBAQ1OTl0Wh2SMHJtORMJJdM6zlydnVDoBiBK5RqZZYkyv5yuHojm7A1m1jVJjqo1kvg/DKmJrJQormdzYDkANWZjyAFyZ0eDn8gAJO4cJ1AfZPhxRFM4o/edSWFu7vb2O7OtvO95k+K9jMVgzdlFROVSncj/AFLuv8vOcc8sZJpM6sfaKUDWA4h7MkrAcRHhk4fJFpfFm47DdiKFQj725Jsrd2LqLEX1O5852fgXBsLhlthaVKmD7RRQC3+Zt2+MzHZB0q4HDuVRr0KV7gHxCmARrzuDJlXwezdT5M3/AHEy8c3B3Rwzg56s1rRhac+xXG8Uh8NRSOQYX9SLSvftbjBzpH4P/wDqa/cX8WL9SX2jqGeeuJy5O1ONbnSHuD/1MkJxbFMfFUA/yj6gw/bX8WH6j+0a7tBwHB4kf8TRpOQLBmAzgdFceIe6cf7e9i8NQXPhXYNf9ySXLLzK38Qt1OnunQaS518TMf8AUy9PykCR+L4dVwtZaaWZkZUCi5ao4I0A3Pz0mfVlOSpGlBQXZwAjSR3lhUwzJoykdNN/MdRK+oZeI59C0YypCUI2qNZryZrQKei2npoyyxwR0gcQ2sfhDpGVFu0jXuZVvSHW0kF95YMNJX1N5vGZyE9zH09jGVISiNJPwU8kU7wZMkPSN9o3uj0lr0cvkZnhqLRhTyiICJlq0Ui6ZYYUyQDrImEMkmcs1s7IO0eNJqjBEF2ZgqDqzGwHqZ1s9jsJh6IQ4QV2CAVGt+0apszgnQAXJ93LaUf2U8CBZsdWsEpkrRvaxfZnuel7e8mbrE4lswbcX/DqLj3b/GSyyaSSYlt2c17QfZ8tQNV4ewbKBnoM5ZuYLJUb+R9eUsvsc4cKIxmIqoVqpagqsCCoKh20P5vB6ec1lTMBlLqz1RbLYKPaLO255EC3kJE7S1TTp91lUNWq53CG5ZAiqGbTQ2RR8BMLPPi0w9CLkqKXGcUNVzUKlXIyaGzopNx4b7kEX5y34N2hyALUuy2t1N79Trz59JkGqrctawzswbTckXDeenr7oTG1crHxewPFYXBJUNmHUgaRLGq0Xk7dM0vGuxlDFB62FYLUNjlv4M3PMPwkzmXaPhtXDnJWQq3LoR1U8xNdgOKvS8VN2FySBe2hHs2PQdZo63FcJjqX3fHBQW/d1Rplex8Q/KQNems3DT2SknTS3/swPZri9SlTTu6jISGU5Tp4L2uNjoBLRe3WKWoabMj+AMCyWO5BF1I8pW8a4EeHtTU1VqoxZqbrpdNmBHI6/OVmKw16+e9glMnTmSSAPnO6CUkcWRtMvsV22qE2NJPgWH1kNu1bHXuh+o/SZzE1dTofeLfWCeuLXOgHM29LCa9GH0Z9WX2aj/5cw0FJf1H6QlPtrW5JTHvzH+omQGMp9fkfpEHEEF9GPwH1h6MPoXqyfk3K9rMUyA94F5+FVGnvNzIuMasaFR6lR3zoVOZidTuB0WwGnnKbhmIbEOlKklr2BZiSFW9izAe46X1je02PLVXpIT3VJyiD8xQ5S7dSSCR0Frc4+KXQJt6Zb0e2GKXQDBVAd1ahQAbS1zlykmWeG+4cStQrYcYLEt+6ym1N3PJGbVG6I11N9NTcc7vLDglbvG+7vqGB7k86dRQWGU9Da1utrc44yY5412A4zwipg6zUao1XUG1gy3IDD4gi3IgjlKyq86J2qq/fuF08U/7/AA1XuMS3N9FUMfNg1K/mh85zjLG0rsUZNqhM08DHZImWFobTJ2Djn3jcJtEqnWRfyLJ+0dUMr6h1kmo0iGbgqJ5JWfRZ+yvAn8Lfqb6zw+zLBL+An/UfrNqQTBsuspxRz85fZjx2BwOxpn9TfWF/u5wP8M/qb6zWqfIQqvHxQuTMb/dpgT/hH9R+sX+7LAfwz+o/WbE1IjV1G+kKDkzIf3aYEf4Z/UfrHp9nGA/hn9TfWSu0vFatjTo3Q+HM9szBCwzWHWxNpkMViqlO7VKzlV8GrWdnVs2YtbQFc+g1ta048n5ME9Rs7MeCbVuVFv2nw1KhhkwtJLU1JYi5sQCTYnmcxvrvKHC8URMjCoLg2ZnIAyWuRpa1hzMueE1O8Vs3t5/aZSt7hScqsToARYHznuI8LyISo0GwCqLm4tey3seZ1nDKEpe/7/o7YzjGsd9f2Vp7QqaTV8yjU06a3swJ9m9r20u3lpJHDe0GGxGVWAzgWBZcxva/tHUyBV7jEg2yMobawPiA1AsdNSFv75GxfZek1jSPdtyAJKk2Nt9ddJjiuyjol8aq0KrKWqCm4N7GiEI3FmvbTTzlfxXgFbDGo9RR3bsGRv3i3a2gIOYGwOhFvOERFxtNCdGTMbHXxIqkKw3YXJ28jzlFxHiV6jq9QtZmFmYkCxItYmdX4sHNyUjn/Jyeko8QqkhRf8tgefncHXXT1iFSR7Iupuh10JUKdvK+nlItLFA2AsfLc26CS8GSpJ8Xx5a3Fj7pWWKS8GIZ4y8kbtJWV6VNVe4pqQLghhnGpYnr/SRs/eUzbQuq69CCD9Zb9oqlOpTqEe2TTsxGyqhVgfK5vKk8Kr0ly6EqdCpuLXPWx5yuCLiqZH8iSlK0Z/E4V7k5vdfmIzD1D7LD16SRjcSL20Op2I35giRzULDTQ9Tb6zpOUN3KflX0Eei0V9tU+IF5WvRfnUFvef5ASVw3gr1iq0zmZmyoApJZrE6D3An4QAuuE8YSj4qSg2IsALC5va/lcH1nS+z3Yvh+Lw9Ou1Js7KO+8TaVrXfnzJv7jOTnApQrNRZmNQWDAhctzla2l9fZOh5ToXCMbVwxJoMC6BVq4cNdnXuwS2TN4rNYeAXAzTPkb60adfsy4d/Db9bfWPofZtw+k61FpnMrBlu7bg6c5QD7Umy2OCbP07zw3/RcQ+A7WV6ZfEY6y5kC4PCIP2hJPt5TdhfQZm31sNgdUkZuTLJOzOF76tgVT9jWppiK6hj4XSqBT/VZidfwiPP2W8P/AIbfqb6yd2SwdVVqV69vvGIYPUHKmgFqdIf5RL5cSAbMSP5QqxXRkv7ruH/w2/U31if3XcP/AIbfqb6zaKwOxi5YUg5P7MYPsy4f+Rv1N9Y0/Zjw/wDI36m+s2uSJYQ4oOT+zEH7MOH/AJG/U31gKn2V8P5Kw/1N9ZvrRj2EKDkydeMe0Fl6mEXSMyDVI/LG4iuqKXc2VRcnynPOKdrsRUfLTy06f4bXzkeZOw93rADdYuulPVnVBzLMB/OVWO7WYNQAa9NySAAhzm/nbYec5Lxkuzklg3S5OvqT16ynqF7W/wB6QGdsx/eAnLTBN2zO5uBtYhRv8SJleLYei5zVTnCka3shqEE3YL+AWAtvqZhq3Eq5p5dS1/aYltPNSdTvrIzcXdaJp91UzFie8WpY+zYXHP4zjnjlVJHZCcLts6HWTvKdqhJIJ1Jst3LAa/8AKwHL4QtSj3oyNVLpo1QKzqxIUqAuul2AO456c5zPHdq8Sy5KdM01zo2l7nJrY62F21PWWfFO2pJXuxlKtmzZW01zFAtrWvpfeQ9HIuivOD8mmIoYc5AhzO2QVCTpYlqZYk75ra2189ZEp8WNNitQG7MQNctrAgE+/L/ITPYztLQrVe8NO3gzhGeyd8pAXONCbDQAHzlRxPtAWLEBAHOYBCSRmB9rra9vdCOGTdUU9aKV2dHwvEwKjEgEHW62sKmRVNxpqbE+kzw7O0XqvWqAuXdnIJsoub2yjf4wvDawahScWIZFvbk+z+jAj4CHqnMpS4uV0OtjqNfKWhDgSlJZP+BlwyqLIoUdAAB8oJ6PwlS+Iq0jYkjpc3BHlyhafGD+JR8NJ1I5GmP4hR8De4/LWWJfOit+ZFPxKi8irilZTrYW1vJFHDPSpItRSpAZdeYDsAQdiLW1EGCOZcWTLWqj/qP6FiR8jIcs+0a2xNTzIPqg/wDMrJoyPUzoH2eKq1RWY2FBK1Unpaiy3tz9ozA0RrN/2NoP3b+BiKid2DYhSrVUDm+xAAa/uiBvRlON1mfF1mY+I1ag+AYqB6ACavFcPSrc1Bdybsw0OawGh5DQaeUyXCqTVq5exIzGpUNicq5sxLHl8ZrMbxajR0dvFvlUXPx5D4w8j2khUwdQbYvE26d6fkeUlcKofd37yn+81OdrO1zubsN/MTO4jtb/AAqXxc/9q/WVWJ49iX/xMo6LZfnv84aDZ2vhnbYLYYlBb86G3qhP8j8JssBjaGITPSdai7XBvY9D0PkZ8o1GLG7Nc9SST6zVfZjxirhsfRWmWKVqi0q1MeyyObZiOq3zX8j1MdmXA+jPu45aRQhH4vWE0Mj4jCBudvOMyENYje08XvykA0XQ3BuOd9JJpV77i0AHiofymecE+UcKw6ekKG84APJjHqgam9uZ6DzigSo7Y4GpWwWIp07lzTJVRu+WzFB/mAItzvECIeJ7a4AHKcVT6G2Zl/UFK/OUtXA0cSWfB1qFQkWKrUB06WBuPSciqjS4kZd7jQjY8wfI8ox0zpHEOCmnUzNTKaAajMLgAE5l+glIcKS5JJykk6kMfQbbX3vLTsV2jxJYUqtTvUOgFXxEe5z4vW83eM7O0KniNMox5qbH1GhgI5JVVFGua5vl0O19C0ZUw7bWGov8POb7iHZC1yrZtLePRt7+0OfvBmexvDXQ3qoy2v8AgLLexIN1vYGw6a223gOzMOo873t8Z40QeVpdph8yhnsBmObLYpYGxGfYb+X8pAqUbA5vDe5pltLjkD8LfzhQWRPuCHfX4QT8Opjp5CwvJdamQCQwK2B9b2GvuMBY329YhkvhWNWh4WQvSJ8ahsrA/mpmxAbbQixtr1F/h8Gta/3WutU8qLWo4hdNu7Y2ffdGaZWtV5Hltr9JW4tr7i/QbDTyicUzSm4mxxdFqZNOqhUk+zVVhrrrlbWQV4ejXvdDYZbG4vbXRtx8ZTYPtdjqIyJiXZP4VULWpW6BKoYAeQtJtPt1/GwOGY2tmomrh21FjorFf/rJvG/DKLMn8kEwbKlemGArIWUFbsgZjoqsdwMxF7cp07HM+Ly0u7XvFFqgLAZaqgByKwLKbnkVU73vOTpx3BlgwpYmmQwNu8pVFFiD+RW+cvMX2qpOihmNhue6GYm51YrqTrKJPyTbTdoqu2/ZOvTr5jSYKVHiDIwuLg6Ak7WmSbhtQfgPoZq+IcWpVAAtdd7nNcH3aiVhK/xqX61hsLRX4ThVViAEbXoDOldmOzlehSZmpupb2GYLlUWN2ZXIvvsNZh6b29mvTHuqoP6y64PxrK37fEiohUi3fBz5W8UTjapitGtbNTFVO7DLUVlqUymWrkKkXFwGuFJy2JtrymOx3BadVF8WtrCsqKCbaZXRQLn3+LzbUCWnaVKamn39NKdzYLSZ3y5ibZwCb6trf8R6yFQ7RUL+OqSxJzVRSKBhYW7xb+InbUaTneOcfiF0ZzivBqtBgGsym+R1uVYf0PkZDXCudgfS3zM6DTxOdCHSmyG3jVx3TC49oHVHttp6WicZ43iMOQMPTw9BToGo0FFXbZqlQu4Oh1BF7HpNY8jlp9j5KjIUezOIIzOBST89Vso+A3Y+6WvBsUMFUFTDWeqP8aogIsRYhEPsjzOvukWpUdzmqMzsebMWb1JvEzTpSMOVnQKX2pVTbPh6Z6lXZT5kXBmowPbzCVFua5pnmtRDcfFQQfgZxUC//gXhqNIlrbaXudvXa/lGZO8YbjdKsP2delUvyVhf9JN5OpK/QCcLoGwtqeuluXXearsl2ufDnu6oL0ib3uS1O2hK9R/y+kAOlZW5kH1EVaVth8zCYfEK6qy6hgGU9QRcQwaIY7P0vFNYja9/WNIPT+cWzdIgOc9vOxl8+Kwy73bE0QNyd6lIDY8yvvI6Tm33IHVdf5j3z6NfP0EyPH+yVGuTU7s06h3enpc9WXYnz3iNWc54IcjA32M7FwLj9KpSCVCAbbg6g9R5zmuI7M16Z8IaoOXhIPqJa8H4bVuA9A253za/1E0mjLTN0ygi+cW63A284tJlOmje5lMXhwyAKFVANgq2kyrh1ceLI46Oqt/OICk4lwChV9qkA35h4T6iZjiHYxyb03Vje/7UFje1vbBG3nebz+zwP3VRqR/KT3lP9Laj4GBarXp+3RFRfz0Dm9aTeIfC8AOV8X7P1UBJpspuTdbuvtE2uuvM8hKPEUGvlTn7TEpYctQNV2G4G/p2+hjKNa4VgW5p7Lj3odZXcS7OUau6KD1CkMPiI7A421Ne6BDC4sSTo2UjTTW15Eq0bLc+If7trOicU7AsdadXS9ytRM2w0s4swmdxfZytS0dDl18Sg1VuB4bhbMB/pPvhYGNq4ckE6W8pDq0D0M1WA4eSxUMGtyym4be9jtzgsRhVzlcpAJspyk7A66gdIwMi1O0UVCBNGeFpc6Ncb3B+Op5wP9lIRfUiFCM4xjCJpv7HUjQa+/X0kd+DAbwAoYRCRLhuEDzjTwsDrACrZSYRaBlgvCz+En0hRw113IA87/0gADBF6ZurMvuP9JfcPxjFSKhVlJ9h1tYCxurAELryOmkh4RwRtrsLXt8OsskwhIBtpp5AC+9zvtMTxqQEmvw9KuiELYeDKRoTrla2632I1FzyEqvuNic1xb1vbmdpaYbhb5gyBrgWBCkKLnW5a1xYcustmwL2Bqoo11K+I2J53HLXXbrbcTXLH3tD7KHDYTTMfCBboLgkb+smUeG1KpGVSwOug032JOnXrNPhWwVMjvK1MOQCO9qKGsdiATpNThClgVIIOxUggjytLXfQUY3Bdj6hGuVQfMsdwdNgNvPnNJwngS0eWvWy8vhLxDCqQYgFog9ZJUwKiFUwAsDUHT5Twcf7EJEIjENPmYM1D0j2ETIYgAM1z7No7MI9xbleIi38vLSMDzIbXkVqpvbKfgJYqJ60QEBqmXrPDGBdb2lgaamRq3DQ3OAyJiBh8TpVpqxGzWsw9zDWBPCqtMf8LiLjlTr+NfcH3HykgcKy6gfONdai+z84DK6pxupRNsVhmp/9RPHTPncaj5yZh8VRri6OjdQDqPeNxCJxKquj0ww52N/kd5CxHCcFiDcA0anIp4GB/wAu3pCxUDx3ZmhV1ZBfkbeIf6t5nuIdg1PsVCei1DnGlzYE6jU8jL+pgMfh/wB1UXEoPwvo9vfufUyKvatM2TEUnotzzAkD0F/lGGzCcS7I1fH3qMwOWxR2IsNw1PMAeVj5elbX4eKZKKCydTdSuUb5eU7VhXpVlvTdXHkbyJxHs/TrAhkX321gI4b3Td7YWA5a3IB8xaxtC1RY2vr1vm+fWb7Edha6sTTqgqfwuM2gOljuPWVVfsrWp3/YE6eEoc2pPiJBty84WMygBtrc36dffEqYUkXDWsdfDcn5y+wvAazEKaTCxvrYTQ8M7FMbZ2+AH9THYqMIlInS2vPW3nc8pYf2JVqjw02ba2lhfqS2/wAJ1Lh3ZOjT1Ci/U6n1MuqWCRdgIrA5PwnsbUBu9NvgR/Oa/h/Z6kmppa9SLn1M14oiNegeRiHZluP4kYWgaop5yCqqu1yx3J5Aamc3qdtsVWBVFpi9xZEGlwdQzE6jrOucW4Ma9NqTkFGFmB99wR0IIBvOf4r7J2uclcZfdr6zLvwbg4rsxtPCu6ElSy0gT3i/tO5IBJSq3NTva+m+nO24P2l+7Pl7tbFQCKbAKxv7YUXF7XB2vpfabDhvZbG0KXcUWoikb51K3z5hZi5OrEjTWUNb7Kq9/DUQDobm3kPKYUa6KKUfJp+Ddolr3CE5hYsjrZgDsR1HmJfJUvsdfdKfsv2U+6KcxNR2GUs2wW98qDkLy5fhZ3U2Mor8kpJXoJTpk/iI90OtI/nPygqCuuhF/MH+hkwC/KMyTs56RrV7b3Edl6RLW3EBDRWvyMKjRoYTzCADnJ8pF7tibn5QzCeWwgA1ahHOPzg8400weUUIu0YCs0GmKN7ZTCd0POMfSIA61vIxyvfcQFJ+sMIwHGih3EjV+EU33Ekz14AVw4bUp/uqht+U+JfQ7fCMxPjGXE0Aw6gZh9R8Jad4Z4VfdALMbi+zNIBqmEqGm4uQMx36X3EucLhq2HVRiMQKpbbwZcum17+L3kS0rimfaUemsj4nIxvbyEQ7sfTr3jzUHOCUC0UpeMQ8Ku9hHFBBkRFfygATJBVAR+G/xhQfOLAAaj/1FZY+NJgA1RHWEG6edvdGqT1gAaeIjA8UPEMUrGFY68a1S0AGPpAiuOsdVxAtrp74A67QAtbxTGXiwEDqpeJT84QmMaAwoMWBUx14CCRGEbPQGezWnswiQdSAgpEj1A3I2jkMc0ACUieZhLwKRbxgEJgqjRWMEDABy0+oimmIt554ABtra8KBAH2ocGADWPnHqIMiOvAB+WMemeRgqFQkm5kmAABm5meb3wrwFTaID1z74GpV5awLuesLSEAHpR8zPGmeTGPUxxMBgwW8jEeo35fnDz0YitqMfxAj4RBWlg4kWoogM//Z
+        <h3>Espresso</h3>
+        <p>Fuerte, intenso y lleno de energía.</p>
       </div>
-      <img src="img/cafe.jpg" alt="Taza de Café Aroma">
+      <div class="card">
+        <img src="img/cafe2.jpg" alt="Café Capuccino">
+        <h3>Capuccino</h3>
+        <p>Espuma de leche cremosa con toque de canela.</p>
+      </div>
+      <div class="card">
+        <img src="img/cafe3.jpg" alt="Café Latte">
+        <h3>Latte</h3>
+        <p>Suave y delicioso para cualquier momento del día.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Sección Nosotros -->
-  <section id="nosotros">
-    <div class="nosotros">
-      <img src="img/nosotros.jpg" alt="Equipo Café Aroma">
-      <div class="texto-nosotros">
-        <h2>Nosotros</h2>
-        <p>Somos un café comprometido con ofrecer la mejor experiencia a nuestros clientes, brindando productos frescos y un ambiente acogedor.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección Menú -->
-  <section id="menu">
-    <h2>Menú</h2>
-    <p>Descubre nuestras especialidades de café y pastelería.</p>
-  </section>
-
-  <!-- Sección Contacto -->
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Escríbenos o visítanos en nuestra tienda.</p>
-  </section>
-
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Café Aroma</p>
+    <p>© 2025 Café Aroma | Todos los derechos reservados</p>
   </footer>
-
 </body>
 </html>
-
